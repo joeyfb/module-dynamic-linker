@@ -1,0 +1,34 @@
+{
+	"redirect" : "/downloads",
+
+
+	"doctor-discussion-guide" : {
+		"href" : "/downloads/DD-700-2203.pdf"
+	},
+
+	"prescribing-information" : {
+		"href" : "/downloads/PI-700-2278.pdf",
+		"mobile-href" : "/downloads/PI-700-2278_flat.pdf"
+	},
+
+	"about-site" : {
+		"href" : "/downloads/AS-700-2213.pdf",
+		"direct" : true
+	},
+
+	"patient-site" : {
+		"ENV" : {
+			"DEV" : "patient.example.local",
+			"STAGE": "test.patient.example.com",
+			"LIVE" : "patient.example.com"
+		}
+	},
+
+	"typekit" : {
+		"ENV" : {
+			"DEV" : "edg5ywo",
+			"STAGE": "gyd7zwf",
+			"LIVE" : "gyd7zwf"
+		}
+	}
+}
