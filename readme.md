@@ -55,7 +55,7 @@ For basic usage, just install the module then fill out `links.json` with your fi
 
 Redirects are a way to have a consistent URL for links which are renamed often, such as PDF with approval codes in filenames. This will prevent emails from having broken or outdated links to documents. This affects how links display.
 
-###To setup,
+###To setup 
 
 First define a redirect location such as `downloads/index.php`. Dynamic linker will be sending requests to that page with query strings.
 

@@ -38,15 +38,15 @@ class Dyli {
 	public static function valid($name) {
 		$json = self::$json;
 
-		// print_r(array(array_key_exists($name, $json), array_key_exists(ENV, $json[$name]['ENV']), ENV));
-
 		if (array_key_exists($name, $json)
+			&& gettype($json[$name]) == "array"
 			&& array_key_exists("ENV", $json[$name])
 			&& array_key_exists(ENV, $json[$name]['ENV'])) {
 
 			return true;
 
 		} else if (array_key_exists($name, $json)
+			&& gettype($json[$name]) == "array"
 			&& array_key_exists("href", $json[$name])) {
 
 			return true;
