@@ -120,7 +120,10 @@ class Dyli {
 			$link = $json[$name];
 		}
 
-		if ( ! isset($json["redirect"]) || $link["direct"] ) {
+		if ( !  isset($json["redirect"])
+		     || array_key_exists("direct", $link)
+		     && $link["direct"] ) {
+
 			return self::href($name, $path);
 		} else {
 			return $json["redirect"] . "/?id=" . $name;

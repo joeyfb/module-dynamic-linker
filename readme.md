@@ -49,7 +49,7 @@ For basic usage, just install the module then fill out `links.json` with your fi
 
 
 	<!-- link to PDF -->
-	<a href="**{[href:pi]}**">another way to link</a>
+	<a href="{[href:pi]}">another way to link</a>
 
 ### Redirects
 
