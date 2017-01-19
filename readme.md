@@ -18,9 +18,9 @@ If PDFs get referenced outside the site (e.g emails) the basic installation wont
 
 ## How to
 
-For basic usage, just install the module then fill out `links.json` with your files and links. Refer to the code below for visual examples.
+For basic usage, just install the module then fill out a `dynamic-links.json` with your files and links and place it within the base modules folder. Refer to the code below for visual examples.
 
-	//links.json
+	//in modules/dynamic-links.json
 	{
 	  // only if using a redirect, then generated URL of links will change
 	  "redirect": "downloads",
