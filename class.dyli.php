@@ -17,7 +17,7 @@ class Dyli {
 	 * Constructor
 	 */
 	private function __construct() {
-		$json = file_get_contents('../dynamic-links.json', FILE_USE_INCLUDE_PATH);
+		$json = file_get_contents(__DIR__ . '\..\dynamic-links.json');
 
 		self::$json = json_decode($json, true);
 	}

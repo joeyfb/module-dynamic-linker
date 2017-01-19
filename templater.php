@@ -9,7 +9,7 @@ Dyli::initialize();
  * @return string
  */
 function place_hrefs($page) {
-	$json = file_get_contents('links.json', FILE_USE_INCLUDE_PATH);
+	$json = file_get_contents(__DIR__ . '\..\dynamic-links.json');
 	$json = json_decode($json, true);
 
 	foreach ($json as $key => $data) {
